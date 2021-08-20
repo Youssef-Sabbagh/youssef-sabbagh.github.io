@@ -23,7 +23,6 @@ dist
 lib
 .vscode/
 .idea/
-*.min.js
 tmp
 
 
