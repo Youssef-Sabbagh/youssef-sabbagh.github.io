@@ -1,0 +1,174 @@
+/*==================== SKILLS ====================*/
+.skills {
+  background-color: var(--first-color-lighter);
+  &__content {
+    text-align: center;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__content .devicon{
+    color: var(--white-color);
+    font-size: 3.5rem;
+  }
+
+  &__content .skills__icon {
+    width: 50%;
+    height: 142px;
+    margin-bottom: 10px;
+  }
+
+  &__content .skills__icon p {
+    font-size: var(--small-font-size);
+    color: var(--cta-color);
+  }
+
+  &__content .skills__icon .fa-js,
+  &__content .skills__icon .fa-cogs,
+  &__content .skills__icon .fa-terminal,
+  &__content .skills__icon .fa-adobe,
+  &__content .skills__icon .i-firebase {
+    height: 72px;
+  }
+
+  &__content .skills__icon .i-firebase {
+    width: 58px;
+  }
+
+  &__content .skills__icon .i-responsive {
+    width: 70px;
+  }
+
+  &__content .skills__icon .i-w3c {
+    width: 91px;
+    min-width: 91px;
+  }
+
+  @media (min-width: 600px) {
+    &__content .skills__icon {
+      width: 25%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    &__content .skills__icon {
+      width: 12.5%;
+    }
+  }
+
+  &__content .container-img-i {
+    display: block;
+    width: 50%;
+    height: 3.5rem;
+    margin: 0 auto;
+  }
+
+  &__container {
+    row-gap: 0;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-2-5);
+    cursor: pointer;
+  }
+  &__icon,
+  &__arrow {
+    font-size: 1.5rem;
+    color: var(--first-color);
+  }
+  &__icon {
+    margin-right: var(--mb-0-75);
+  }
+  &__title {
+    font-size: var(--h2-font-size);
+    margin-bottom: 0;
+  }
+  &__subtitle {
+    margin-top: 0;
+    font-size: var(--small-font-size);
+  }
+
+  &__arrow {
+    margin-left: auto;
+    transition: 0.3s;
+  }
+
+  &__list {
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+  }
+
+  &__titles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--fw-reg);
+  }
+  &__bar,
+  &__percentage {
+    height: 5px;
+    border-radius: 0.25rem;
+  }
+
+  &__bar {
+    background-color: var(--first-color-lighter);
+  }
+  &__percentage {
+    display: block;
+    background-color: var(--first-color);
+  }
+  &__html {
+    width: 90%;
+  }
+  &__css {
+    width: 80%;
+  }
+  &__js {
+    width: 70%;
+  }
+  &__react {
+    width: 60%;
+  }
+  &__php {
+    width: 60%;
+  }
+  &__node {
+    width: 50%;
+  }
+  &__sql {
+    width: 70%;
+  }
+  &__python {
+    width: 60%;
+  }
+  &__figma {
+    width: 40%;
+  }
+  &__sketch {
+    width: 30%;
+  }
+  &__photoshop {
+    width: 10%;
+  }
+
+  &__close &__list {
+    height: 0;
+    overflow: hidden;
+  }
+
+  &__open &__list {
+    height: max-content;
+    margin-bottom: var(--mb-2-5);
+  }
+  &__open &__arrow {
+    transform: rotate(180deg);
+  }
+}

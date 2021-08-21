@@ -1,0 +1,94 @@
+/*==================== NAV ====================*/
+.nav {
+  max-width: 968px;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+
+    &:hover {
+      font-weight: var(--fw-bold);
+      color: var(--cta-color);
+    }
+  }
+  &__toggle {
+    color: var(--title-color);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+
+    &:hover {
+      font-weight: var(--fw-bold);
+      color: var(--cta-color);
+    }
+  }
+
+  &__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    transition: transform 0.5s;
+
+    &:hover {
+      color: var(--cta-color);
+      transform: scale(1.1);
+    }
+  }
+
+  &__icon {
+    font-size: 1.2rem;
+  }
+
+  &__close {
+    position: absolute;
+    right: 1.3rem;
+    bottom: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.5s;
+    color: var(--title-color);
+
+    &:hover {
+      color: var(--cta-color);
+      transform: scale(1.1);
+    }
+  }
+}
+
+/*========== Button Dark/Light ==========*/
+.nav__btns {
+  display: flex;
+  align-items: center;
+}
+
+.change-theme {
+  font-size: 1.25rem;
+  color: var(--title-color);
+  margin-right: var(--mb-1);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--cta-color);
+  }
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: var(--body-color);
+}
