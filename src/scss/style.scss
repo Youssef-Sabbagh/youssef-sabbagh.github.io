@@ -10,124 +10,6 @@
 @import "blocks/contact";
 @import "blocks/footer";
 
-@media screen and (max-width: 768px) {
-  .nav__menu {
-    position: fixed;
-    bottom: -100%;
-    left: 0;
-    width: 100%;
-    background-color: var(--body-color);
-    padding: 2rem 1.5rem 4rem;
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.3);
-    border-radius: 1.5rem 1.5rem 0 0;
-    transition: 0.2s;
-  }
-}
-
-/* show menu */
-.show-menu {
-  bottom: 0;
-}
-/* Active link */
-.active-link {
-  color: var(--cta-color);
-}
-
-/* Change background header */
-.scroll-header {
-  box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.25);
-}
-
-/*==================== BUTTONS ====================*/
-.button {
-  display: inline-block;
-  background-color: var(--cta-color);
-  color: var(--white-color);
-  padding: 1rem;
-  border-radius: 0.5rem;
-
-  &:hover {
-    background-color: var(--first-color);
-  }
-
-  &__icon {
-    font-size: 1.125rem;
-    margin-left: var(--mb-0-5);
-    transition: 0.3s;
-  }
-
-  &--flex {
-    display: inline-flex;
-    align-items: center;
-  }
-
-  &--small {
-    padding: 0.75 rem 1rem;
-  }
-
-  &--link {
-    padding: 0;
-    background-color: transparent;
-    color: var(--cta-color);
-
-    &:hover {
-      background-color: transparent;
-      color: var(--first-color);
-    }
-  }
-
-  &--white {
-    background-color: var(--white-color);
-    color: var(--first-color);
-    &:hover {
-      background-color: var(--white-color);
-      color: var(--cta-color);
-    }
-  }
-}
-
-/*========== SCROLL UP ==========*/
-.scrollup {
-  position: fixed;
-  right: 1rem;
-  bottom: -20%;
-  background-color: var(--cta-color);
-  opacity: 0.5;
-  padding: 0.3rem 0.5rem;
-  border-radius: 0.5rem;
-  z-index: var(--z-tooltip);
-  transition: 0.3s;
-
-  &:hover {
-    background-color: var(--first-color);
-  }
-
-  &__icon {
-    font-size: 1.5rem;
-    color: var(--white-color);
-  }
-}
-/* Show scroll */
-.show-scroll {
-  bottom: 5rem;
-}
-
-/*========== SCROLL BAR ==========*/
-
-::-webkit-scrollbar {
-  width: 0.6rem;
-  background-color: var(--scroll-bar-color);
-  border-radius: 0.5rem;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--scroll-thumb-color);
-  border-radius: 0.5rem;
-
-  &:hover {
-    background-color: var(--text-color-light);
-  }
-}
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
@@ -181,7 +63,6 @@
   .about__container,
   .skills__container,
   .portfolio__content,
-  .project__container,
   .contact__container,
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
@@ -196,23 +77,6 @@
 
 /* For large devices */
 @media screen and (min-width: 768px) {
-  body {
-    margin: 0;
-  }
-
-  .section {
-    padding: 6rem 0 2rem;
-
-    &__subtitle {
-      margin-bottom: 4rem;
-    }
-  }
-
-  .container {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .header {
     top: 0;
     bottom: initial;
@@ -307,15 +171,6 @@
     }
   }
 
-  .portfolio {
-    &__img {
-      width: 320px;
-    }
-
-    &__content {
-      align-items: center;
-    }
-  }
 
   .footer {
     &__container {

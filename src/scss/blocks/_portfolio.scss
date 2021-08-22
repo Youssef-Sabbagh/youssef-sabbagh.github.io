@@ -4,6 +4,17 @@
     overflow: initial;
   }
 
+  @media screen and (min-width: 768px) {
+    &__img {
+      width: 600px;
+      border: 2px solid red;
+    }
+
+    &__content {
+      align-items: center;
+    }
+  }
+
   &__content {
     padding: 0 1.5rem;
   }
@@ -54,29 +65,5 @@
   .swiper-portfolio-icon {
     font-size: 2rem;
     color: var(--first-color);
-  }
-}
-/*==================== PROJECT IN MIND ====================*/
-.project {
-  text-align: center;
-
-  &__bg {
-    background-color: var(--first-color-second);
-    padding-top: 3rem;
-  }
-
-  &__title {
-    font-size: var(--h2-font-size);
-    margin-bottom: var(--mb-0-75);
-    color: var(--white-color);
-  }
-
-  &__description {
-    margin-bottom: var(--mb-1-5);
-    color: var(--white-color);
-  }
-  &__img {
-    width: 232px;
-    justify-self: center;
   }
 }
