@@ -14,15 +14,7 @@
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 350px) {
-  
-  .nav__menu {
-    padding: 2rem 0.25rem 4rem;
-  }
-
-  .nav__list {
-    column-gap: 0;
-  }
-  .home {
+    .home {
     &__content {
       grid-template-columns: 0.25fr 3fr;
     }
@@ -73,35 +65,10 @@
 
 /* For large devices */
 @media screen and (min-width: 768px) {
-  .header {
-    top: 0;
-    bottom: initial;
-  }
 
-  .header,
   .main,
   .footer__container {
     padding: 0 1rem;
-  }
-
-  .nav {
-    height: calc(var(--header-height) + 1.5rem);
-    column-gap: 1rem;
-
-    &__icon,
-    &__close,
-    &__toggle {
-      display: none;
-    }
-
-    &__menu {
-      margin-left: auto;
-    }
-
-    &__list {
-      display: flex;
-      column-gap: 2rem;
-    }
   }
 
   .change-theme {
@@ -193,7 +160,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .header,
   .main,
   .footer__container {
     padding: 0;
