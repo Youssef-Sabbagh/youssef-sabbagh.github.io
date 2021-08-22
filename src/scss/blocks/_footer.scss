@@ -4,11 +4,27 @@
 
   &__container {
     row-gap: 3.5rem;
+
+    @media screen and (min-width: 568px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 768px) {
+      padding: 0 1rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (min-width: 1024px) {
+      padding: 0;
+    }
   }
 
   &__bg {
     background-color: var(--first-color-second);
     padding: 2rem 0 3rem;
+    @media screen and (min-width: 768px) {
+      padding: 3rem 0 3.5rem;
+    }
   }
 
   &__title {
@@ -25,6 +41,11 @@
     display: flex;
     flex-direction: column;
     row-gap: 1.5rem;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      column-gap: 2rem;
+    }
   }
 
   &__link {
@@ -36,6 +57,9 @@
 
   &__social {
     font-size: 1.5rem;
+    @media screen and (min-width: 768px) {
+      justify-self: flex-end;
+    }
   }
 
   &__social-icon {
@@ -51,5 +75,8 @@
     color: var(--white-color);
     text-align: center;
     margin-top: var(--mb-3);
+    @media screen and (min-width: 768px) {
+      margin-top: 4.5rem;
+    }
   }
 }
