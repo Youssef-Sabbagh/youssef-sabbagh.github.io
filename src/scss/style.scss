@@ -14,14 +14,6 @@
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media screen and (max-width: 350px) {
-    .home {
-    &__content {
-      grid-template-columns: 0.25fr 3fr;
-    }
-    &__blob {
-      width: 180px;
-    }
-  }
   .skills__title {
     font-size: var(--normal-font-size);
   }
@@ -33,20 +25,6 @@
 
 /* For medium devices */
 @media screen and (min-width: 568px) {
-  .home {
-    &__content {
-      grid-template-columns: max-content 1fr 1fr;
-    }
-
-    &__data {
-      grid-column: initial;
-    }
-
-    &__img {
-      order: 1;
-      justify-self: center;
-    }
-  }
 
   .about__container,
   .skills__container,
@@ -75,28 +53,6 @@
     margin: 0;
   }
 
-  .home {
-    &__container {
-      row-gap: 5rem;
-    }
-
-    &__content {
-      padding-top: 5.5rem;
-      column-gap: 2rem;
-    }
-
-    &__blob {
-      width: 270px;
-    }
-
-    &__scroll {
-      display: block;
-    }
-
-    &__scroll-button {
-      margin-left: 3rem;
-    }
-  }
 
   .about {
     &__container {
@@ -165,15 +121,6 @@
     padding: 0;
   }
 
-  .home {
-    &__blob {
-      width: 320px;
-    }
-
-    &__social {
-      transform: translateX(-6rem);
-    }
-  }
 
   .contact__form {
     width: 450px;
