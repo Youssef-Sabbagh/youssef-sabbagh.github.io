@@ -1,56 +1,49 @@
 /*==================== CONTACT ME ====================*/
 .contact {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  background-color: var(--first-color-lighter);
   &__container {
-    row-gap: 3rem;
-    @media screen and (min-width: 568px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
-  &__information {
-    display: flex;
-    margin-bottom: var(--mb-2);
-  }
-
-  &__icon {
-    font-size: 2rem;
-    color: var(--first-color);
-    margin-right: var(--mb-0-75);
+    row-gap: 0;
   }
 
   &__title {
-    font-size: var(--h3-font-size);
-  }
-
-  &__subtitle {
-    font-size: var(--small-font-size);
-    color: var(--text-color-light);
-  }
-
-  &__content {
-    background-color: var(--input-color);
-    border-radius: 0.5rem;
-    padding: 0.75rem 1rem 0.25rem;
-  }
-
-  &__form {
-    @media screen and (min-width: 1024px) {
-      width: 450px;
-    }
-  }
-
-  &__label {
-    font-size: var(--small-font-size);
     color: var(--title-color);
   }
 
-  &__input {
-    width: 100%;
-    background-color: var(--input-color);
-    color: var(--text-color);
-    border: none;
-    outline: none;
-    padding: 0.25rem 0.5rem 0.5rem 0;
-    font-family: var(--ff-body);
+  &__content {
+    text-align: center;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .icon {
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icono {
+    font-size: 3rem;
+    color: var(--title-color);
+    &:hover {
+      color: var(--cta-color);
+    }
   }
 }
