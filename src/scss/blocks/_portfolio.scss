@@ -4,20 +4,13 @@
     overflow: initial;
   }
 
-  @media screen and (min-width: 768px) {
-    &__img {
-      width: 600px;
-    }
-
-    &__content {
-      align-items: center;
-    }
-  }
-
   &__content {
     padding: 0 1.5rem;
     @media screen and (min-width: 568px) {
       grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (min-width: 768px) {
+      align-items: center;
     }
   }
 
@@ -25,15 +18,18 @@
     width: 265px;
     border-radius: 0.5rem;
     justify-self: center;
+    @media screen and (min-width: 768px) {
+      width: 500px;
+    }
   }
 
   &__title {
     font-size: var(--h3-font-size);
-    margin-bottom: var(--mb-0-5);
+    margin-bottom: var(--mb-1);
   }
 
   &__description {
-    font-size: var(--mb-0-75);
+    margin-bottom: var(--mb-1);
   }
 
   &__button:hover .button__icon {
