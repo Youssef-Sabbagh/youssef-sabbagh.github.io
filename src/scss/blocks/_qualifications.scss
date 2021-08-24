@@ -30,18 +30,9 @@
     margin-right: var(--mb-0-25);
   }
 
-  &__data {
-    gap: 0.5rem;
-    display: grid;
-    grid-template-columns: 1fr max-content 1fr;
-
-    @media screen and (min-width: 350px) {
-      column-gap: 1.5rem;
-    }
-  }
-
   &__title {
     font-size: var(--normal-font-size);
+    margin-top: 1rem;
   }
 
   &__subtitle {
@@ -55,38 +46,11 @@
     color: var(--text-color);
   }
 
-  &__rounder {
-    display: inline-block;
-    width: 13px;
-    height: 13px;
-    background-color: var(--first-color);
-    border-radius: 50%;
-  }
-
-  &__line {
-    display: block;
-    width: 1px;
-    height: 100%;
-    background-color: var(--first-color);
-    transform: translate(6px, -7px);
-  }
-
   & [data-content] {
     display: none;
   }
 
   &__active[data-content] {
-    display: block;
-  }
-
-  &__sections {
-    display: grid;
-    @media screen and (min-width: 568px) {
-      grid-template-columns: 0.6fr;
-      justify-content: center;
-    }
-    @media screen and (min-width: 768px) {
-      grid-template-columns: 0.5fr;
-    }
+    display: flex;
   }
 }

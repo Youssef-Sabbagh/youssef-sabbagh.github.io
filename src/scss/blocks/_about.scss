@@ -3,6 +3,9 @@
   &__description {
     text-align: center;
     margin-bottom: var(--mb-2-5);
+    @media screen and (min-width: 350px) {
+      text-align: initial;
+    }
   }
 
   &__info {
@@ -28,6 +31,10 @@
   &__buttons {
     display: flex;
     justify-content: center;
+    @media screen and (min-width: 350px) {
+      justify-content: initial;
+    }
+
     align-items: center;
   }
 }
